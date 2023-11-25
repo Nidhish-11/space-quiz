@@ -13,45 +13,7 @@ class Quiz implements ActionListener,ItemListener
 	ButtonGroup bg1,bg2,bg3,bg4,bg5,bg6;
 	JRadioButton rb1,rb2,rb3,rb4,rb5,rb6,rb7,rb8,rb9,rb10,rb11,rb12,rb13,rb14,rb15,rb16,rb17,rb18,rb19,rb20,rb21,rb22,rb23,rb24;
 	JProgressBar jb;
-	/*{
-		AudioPlayer MGP=AudioPlayer.player;
-		AudioStream BGM;
-		AudioData MD;
-		ContinuousAudioDataStream loop=null;
-		try
-		{
-			BGM=new AudioStream(new FileInputStream("images/a.mp3"));
-			MD=BGM.getData();
-			loop=new ContinuousAudioDataStream(MD);
-			AudioPlayer.player.start(BGM);
-		}
-		catch(FileNotFoundException e)
-		{
-			System.out.print(e.toString());
-		}
-		catch(IOException error)
-		{
-			System.out.print(error.toString());
-		}
-		MGP.start(loop);
-	}*/
-	/*{
-		try
-		{
-			String soundFile="D:\\Nidhish\\Assembly\\a.mp3";
-			InputStream in=new FileInputStream(soundFile);
-			AudioStream as=new AudioStream(in);
-			AudioPlayer.player.start(as);
-		}
-		catch(FileNotFoundException e)
-		{
-			System.out.print(e.toString());
-		}
-		catch(IOException error)
-		{
-			System.out.print(error.toString());
-		}
-	}*/ 
+
 	Quiz()
 	{
 		f=new JFrame();		
@@ -294,62 +256,6 @@ class Quiz implements ActionListener,ItemListener
 		p5.setVisible(false);
 		p4.setVisible(false);
 		p3.setVisible(true);
-		/*p9=new JPanel();
-		p9.setLayout(null);
-		p9.setBounds(5,30,990,690);
-		f.add(p9);
-		p9.setBackground(Color.green);
-		l10=new JLabel("images/1");
-		l10.setBounds(20,20,400,30);
-		p9.add(l10);
-		l11=new JLabel("images/A1");
-		l11.setBounds(20,60,400,30);
-		p9.add(l11);
-		l12=new JLabel("images/2");
-		l12.setBounds(20,100,400,30);
-		p9.add(l12);
-		l13=new JLabel("images/A2");
-		l13.setBounds(20,140,400,30);
-		p9.add(l13);
-		l14=new JLabel("images/3");
-		l14.setBounds(20,180,400,30);
-		p9.add(l14);
-		l15=new JLabel("images/A3");
-		l15.setBounds(20,220,400,30);
-		p9.add(l15);
-		l16=new JLabel("images/4");
-		l16.setBounds(20,260,400,30);
-		p9.add(l16);
-		l17=new JLabel("images/A4");
-		l17.setBounds(20,300,400,30);
-		p9.add(l17);
-		l18=new JLabel("images/5");
-		l18.setBounds(20,340,400,30);
-		p9.add(l18);
-		l19=new JLabel("images/A5");
-		l19.setBounds(20,380,400,30);
-		p9.add(l19);
-		l20=new JLabel("images/6");
-		l20.setBounds(20,420,400,30);
-		p9.add(l20);
-		l21=new JLabel("images/A6");
-		l21.setBounds(20,460,400,30);
-		p9.add(l21);
-		l22=new JLabel("images/Total Questions");
-		l22.setBounds(500,110,100,30);
-		p9.add(l22);
-		l23=new JLabel("images/Correct Answers");
-		l23.setBounds(500,170,100,30);
-		p9.add(l23);
-		l24=new JLabel("images/Wrong Answers");
-		l24.setBounds(500,230,100,30);
-		p9.add(l24);
-		l25=new JLabel("images/Success Rate");
-		l25.setBounds(500,290,100,30);
-		p9.add(l25);
-		l26=new JLabel("images/6");
-		l26.setBounds(630,110,100,30);
-		p9.add(l26);*/
 		p=3;
 		b9.addActionListener(this);
 		rb1.addItemListener(this);
@@ -376,30 +282,6 @@ class Quiz implements ActionListener,ItemListener
 		rb22.addItemListener(this);
 		rb23.addItemListener(this);
 		rb24.addItemListener(this);
-		/*rb1.setActionCommand(rb1.getText());
-		rb2.setActionCommand(rb2.getText());
-		rb3.setActionCommand(rb3.getText());
-		rb4.setActionCommand(rb4.getText());
-		rb5.setActionCommand(rb5.getText());
-		rb6.setActionCommand(rb6.getText());
-		rb7.setActionCommand(rb7.getText());
-		rb8.setActionCommand(rb8.getText());
-		rb9.setActionCommand(rb9.getText());
-		rb10.setActionCommand(rb10.getText());
-		rb11.setActionCommand(rb11.getText());
-		rb12.setActionCommand(rb12.getText());
-		rb13.setActionCommand(rb13.getText());
-		rb14.setActionCommand(rb14.getText());
-		rb15.setActionCommand(rb15.getText());
-		rb16.setActionCommand(rb16.getText());
-		rb17.setActionCommand(rb17.getText());
-		rb18.setActionCommand(rb18.getText());
-		rb19.setActionCommand(rb19.getText());
-		rb20.setActionCommand(rb20.getText());
-		rb21.setActionCommand(rb21.getText());
-		rb22.setActionCommand(rb22.getText());
-		rb23.setActionCommand(rb23.getText());
-		rb24.setActionCommand(rb24.getText());*/
 		p3.setOpaque(false);
 		p4.setOpaque(false);
 		p5.setOpaque(false);
